@@ -1,0 +1,15 @@
+E:\C# Projects\Fridge OOP\Fridge OOP\bin\Debug\net6.0\Fridge OOP.exe
+E:\C# Projects\Fridge OOP\Fridge OOP\bin\Debug\net6.0\Fridge OOP.deps.json
+E:\C# Projects\Fridge OOP\Fridge OOP\bin\Debug\net6.0\Fridge OOP.runtimeconfig.json
+E:\C# Projects\Fridge OOP\Fridge OOP\bin\Debug\net6.0\Fridge OOP.dll
+E:\C# Projects\Fridge OOP\Fridge OOP\bin\Debug\net6.0\Fridge OOP.pdb
+E:\C# Projects\Fridge OOP\Fridge OOP\obj\Debug\net6.0\Fridge OOP.csproj.AssemblyReference.cache
+E:\C# Projects\Fridge OOP\Fridge OOP\obj\Debug\net6.0\Fridge OOP.GeneratedMSBuildEditorConfig.editorconfig
+E:\C# Projects\Fridge OOP\Fridge OOP\obj\Debug\net6.0\Fridge OOP.AssemblyInfoInputs.cache
+E:\C# Projects\Fridge OOP\Fridge OOP\obj\Debug\net6.0\Fridge OOP.AssemblyInfo.cs
+E:\C# Projects\Fridge OOP\Fridge OOP\obj\Debug\net6.0\Fridge OOP.csproj.CoreCompileInputs.cache
+E:\C# Projects\Fridge OOP\Fridge OOP\obj\Debug\net6.0\Fridge OOP.dll
+E:\C# Projects\Fridge OOP\Fridge OOP\obj\Debug\net6.0\refint\Fridge OOP.dll
+E:\C# Projects\Fridge OOP\Fridge OOP\obj\Debug\net6.0\Fridge OOP.pdb
+E:\C# Projects\Fridge OOP\Fridge OOP\obj\Debug\net6.0\Fridge OOP.genruntimeconfig.cache
+E:\C# Projects\Fridge OOP\Fridge OOP\obj\Debug\net6.0\ref\Fridge OOP.dll

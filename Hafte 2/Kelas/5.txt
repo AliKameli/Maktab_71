@@ -1,0 +1,43 @@
+int[] InsertionSort(int[] arr)
+{
+    int[] temp = new int[arr.Length];
+    temp[0] = arr[0];
+    int count = 1;
+    for (int i = 1; i < arr.Length; i++)
+    {
+        if (arr[i] >= temp[count - 1])
+        {
+            Insert(temp, count, arr[i], count);
+            count++;
+        }
+        else
+        {
+            for (int j = count - 1; j >= 0; j--)
+            {
+
+                if (temp[j] <= arr[i])
+                {
+                    Insert(temp, j + 1, arr[i], count);
+                    count++;
+                    break;
+                }
+                if (j == 0)
+                {
+                    Insert(temp, j, arr[i], count);
+                    count++;
+                    break;
+                }
+            }
+        }
+    }
+    PrintArray(temp);
+    return temp;
+}
+void Insert(int[] arr, int index, int num, int count)
+{
+    for (int i = count-1; i >=index; i--)
+    {
+        arr[i + 1] = arr[i];
+    }
+    arr[index] = num;
+}

@@ -1,0 +1,15 @@
+E:\C# Projects\EnumsProject\EnumsProject\bin\Debug\net6.0\EnumsProject.exe
+E:\C# Projects\EnumsProject\EnumsProject\bin\Debug\net6.0\EnumsProject.deps.json
+E:\C# Projects\EnumsProject\EnumsProject\bin\Debug\net6.0\EnumsProject.runtimeconfig.json
+E:\C# Projects\EnumsProject\EnumsProject\bin\Debug\net6.0\EnumsProject.dll
+E:\C# Projects\EnumsProject\EnumsProject\bin\Debug\net6.0\EnumsProject.pdb
+E:\C# Projects\EnumsProject\EnumsProject\obj\Debug\net6.0\EnumsProject.csproj.AssemblyReference.cache
+E:\C# Projects\EnumsProject\EnumsProject\obj\Debug\net6.0\EnumsProject.GeneratedMSBuildEditorConfig.editorconfig
+E:\C# Projects\EnumsProject\EnumsProject\obj\Debug\net6.0\EnumsProject.AssemblyInfoInputs.cache
+E:\C# Projects\EnumsProject\EnumsProject\obj\Debug\net6.0\EnumsProject.AssemblyInfo.cs
+E:\C# Projects\EnumsProject\EnumsProject\obj\Debug\net6.0\EnumsProject.csproj.CoreCompileInputs.cache
+E:\C# Projects\EnumsProject\EnumsProject\obj\Debug\net6.0\EnumsProject.dll
+E:\C# Projects\EnumsProject\EnumsProject\obj\Debug\net6.0\refint\EnumsProject.dll
+E:\C# Projects\EnumsProject\EnumsProject\obj\Debug\net6.0\EnumsProject.pdb
+E:\C# Projects\EnumsProject\EnumsProject\obj\Debug\net6.0\EnumsProject.genruntimeconfig.cache
+E:\C# Projects\EnumsProject\EnumsProject\obj\Debug\net6.0\ref\EnumsProject.dll

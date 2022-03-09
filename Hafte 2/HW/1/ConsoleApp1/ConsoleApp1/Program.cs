@@ -1,0 +1,159 @@
+﻿//Main
+{
+    Console.WriteLine("Hello . Welcome");
+    int[] numbersArray = GetArray();
+    Console.WriteLine("please select method");
+    Console.WriteLine("1- Show Min");
+    Console.WriteLine("2- Reverse Array");
+    Console.WriteLine("3- Sort Array");
+    Console.WriteLine("4- Count uniqe numbers");
+    Console.WriteLine("5- Search in second array");
+    int methodType = Convert.ToInt32(Console.ReadLine());
+    switch (methodType)
+    {
+        case 1:
+            Console.WriteLine(GetMin(numbersArray));
+            break;
+        case 2:
+            PrintArray(ReverseArray(numbersArray));
+            break;
+        case 3:
+            PrintArray(SortArray(numbersArray));
+            break;
+        case 4:
+            PrintNumberCount(numbersArray);
+            break;
+        case 5:
+            Console.WriteLine("Enter Second array");
+            var secondArray = GetArray();
+            Console.WriteLine("These numbers exist in both arrays");
+            PrintArray(CompareArrays(secondArray, numbersArray));
+            break;
+        default:
+            break;
+    }
+}
+static int[] GetArray()
+{
+    Console.WriteLine("please enter interger array split by  \',\' :");
+    string input = Console.ReadLine();
+    string[] inputArray = input.Split(',');
+    for (int i = 0; i < inputArray.Length; i++)
+    {
+        inputArray[i] = inputArray[i].Trim();
+    }
+    int[] inputNumber = new int[inputArray.Length];
+    for (int i = 0; i < inputArray.Length; i++)
+    {
+        inputNumber[i] = Convert.ToInt32(inputArray[i]);
+    }
+    return inputNumber;
+}
+int GetMax(int[] arr)
+{
+    int result = arr[0];
+    for (int i = 0; i < arr.Length; i++)
+    {
+        if (arr[i] > result)
+            result = arr[i];
+    }
+    return (result);
+}
+int GetMin(int[] arr)
+{
+    int result = arr[0];
+    for (int i = 0; i < arr.Length; i++)
+    {
+        if (arr[i] < result)
+            result = arr[i];
+    }
+    return (result);
+}
+int[] ReverseArray(int[] arr)
+{
+    int[] result = new int[arr.Length];
+    for (int i = arr.Length - 1; i >= 0; i--)
+    {
+        result[arr.Length - i - 1] = arr[i];
+    }
+    return result;
+}
+int[] SortArray(int[] arr)
+{
+    int[] result = new int[arr.Length];
+    //Creating new array so the first array stays intact
+    for (int i = 0; i < arr.Length; i++)
+    {
+        result[i] = arr[i];
+    }
+    int n = result.Length;
+    for (int i = 0; i < n - 1; i++)
+        for (int j = 0; j < n - i - 1; j++)
+            if (result[j] > result[j + 1])
+            {
+                // swap temp and arr[i]
+                int temp = result[j];
+                result[j] = result[j + 1];
+                result[j + 1] = temp;
+            }
+    return result;
+}
+void PrintArray(int[] arr)
+{
+    foreach (var item in arr.Take(arr.Length-1))
+    {
+        Console.Write($"{item} - ");
+    }
+    Console.Write(arr[arr.Length-1]+"\n");
+}
+void PrintNumberCount(int[] arr)
+{
+    var sortedArray = SortArray(arr);
+    List<int[]> result = new List<int[]>();
+    result.Add(new int[2] { sortedArray[0], 1 });
+    for (int i = 1; i < sortedArray.Length; i++)
+    {
+        int listLenght = result.Count();
+        for (int j = 0; j < listLenght; j++)
+        {
+            if (result[j][0] == sortedArray[i])
+            {
+                result[j][1]++;
+                break;
+            }
+            if (j == listLenght - 1)
+            {
+                int[] t = { sortedArray[i], 1 };
+                result.Add(t);
+            }
+        }
+    }
+    for (int i = 0; i < result.Count(); i++)
+    {
+        Console.WriteLine($"{result[i][0]} appeared {result[i][1]} time(s)");
+    }
+
+}
+int[] CompareArrays(int[] arr1, int[] arr2)
+{
+    List<int> result = new List<int>();
+    for (int i = 0; i < arr1.Length; i++)
+    {
+        for (int j = 0; j < arr2.Length; j++)
+        {
+            if (arr1[i] == arr2[j])
+            {
+                if (result.Contains(arr1[i]))
+                {
+                    break;
+                }
+                else
+                {
+                    result.Add(arr1[i]);
+                    break;
+                }
+            }
+        }
+    }
+    return SortArray(result.ToArray());
+}

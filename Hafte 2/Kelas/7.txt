@@ -1,0 +1,33 @@
+void NomalizeFileNames(string path)
+{
+    string[] files = Directory.GetFiles(path);
+    string[] wrongNames = { "mactab", "ddd" };
+    foreach (var file in files)
+    {
+        var info = new FileInfo(file);
+        
+        foreach (var name in wrongNames)
+        {
+            if (info.Name.StartsWith(name))
+            {
+                var t = string.Join("", new string[] { info.Directory.FullName, @"\", "maktab", string.Join("",info.Name.Skip(name.Length).ToArray()) });
+                File.Move(file, t);
+                
+            }
+        }
+    }
+}
+void NomalizeFileContents(string path, string fileName,string normalTextToAdd)
+{
+    var files = Directory.GetFiles(path);
+    foreach (var file in files)
+    {
+        var info = new FileInfo(file);
+        if (info.Name.StartsWith(fileName))
+        {
+            var fileContent = File.ReadAllLines(file);
+            File.WriteAllText(file, $"{normalTextToAdd}\n");
+            File.AppendAllLines(file, fileContent);
+        }
+    }
+}

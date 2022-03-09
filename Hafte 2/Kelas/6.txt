@@ -1,0 +1,16 @@
+void SaveAllFilesInfo(string path,string infoPath)
+{
+    var dirs = Directory.GetDirectories(path);
+    var files = Directory.GetFiles(path);
+    File.AppendAllLines(infoPath, dirs);
+    foreach (var file in files)
+    {
+        var info = new FileInfo(file);
+        var t = string.Join(",", new string[] { info.FullName, info.Length.ToString(), info.Extension, "\n" });
+        File.AppendAllText(infoPath, t);
+    }
+    foreach (var dir in dirs)
+    {
+        SaveAllFilesInfo(dir, infoPath);
+    }
+}
