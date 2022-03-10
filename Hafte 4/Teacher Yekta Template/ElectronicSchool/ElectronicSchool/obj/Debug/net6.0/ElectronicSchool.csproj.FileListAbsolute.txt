@@ -1,0 +1,30 @@
+C:\Users\rasoo\Documents\Work Space\Maktab\Maktab 71\Class Projects\Session 10\ElectronicSchool\ElectronicSchool\obj\Debug\net6.0\ElectronicSchool.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rasoo\Documents\Work Space\Maktab\Maktab 71\Class Projects\Session 10\ElectronicSchool\ElectronicSchool\obj\Debug\net6.0\ElectronicSchool.AssemblyInfoInputs.cache
+C:\Users\rasoo\Documents\Work Space\Maktab\Maktab 71\Class Projects\Session 10\ElectronicSchool\ElectronicSchool\obj\Debug\net6.0\ElectronicSchool.AssemblyInfo.cs
+C:\Users\rasoo\Documents\Work Space\Maktab\Maktab 71\Class Projects\Session 10\ElectronicSchool\ElectronicSchool\obj\Debug\net6.0\ElectronicSchool.csproj.CoreCompileInputs.cache
+C:\Users\rasoo\Documents\Work Space\Maktab\Maktab 71\Class Projects\Session 10\ElectronicSchool\ElectronicSchool\bin\Debug\net6.0\ElectronicSchool.exe
+C:\Users\rasoo\Documents\Work Space\Maktab\Maktab 71\Class Projects\Session 10\ElectronicSchool\ElectronicSchool\bin\Debug\net6.0\ElectronicSchool.deps.json
+C:\Users\rasoo\Documents\Work Space\Maktab\Maktab 71\Class Projects\Session 10\ElectronicSchool\ElectronicSchool\bin\Debug\net6.0\ElectronicSchool.runtimeconfig.json
+C:\Users\rasoo\Documents\Work Space\Maktab\Maktab 71\Class Projects\Session 10\ElectronicSchool\ElectronicSchool\bin\Debug\net6.0\ElectronicSchool.dll
+C:\Users\rasoo\Documents\Work Space\Maktab\Maktab 71\Class Projects\Session 10\ElectronicSchool\ElectronicSchool\bin\Debug\net6.0\ref\ElectronicSchool.dll
+C:\Users\rasoo\Documents\Work Space\Maktab\Maktab 71\Class Projects\Session 10\ElectronicSchool\ElectronicSchool\bin\Debug\net6.0\ElectronicSchool.pdb
+C:\Users\rasoo\Documents\Work Space\Maktab\Maktab 71\Class Projects\Session 10\ElectronicSchool\ElectronicSchool\obj\Debug\net6.0\ElectronicSchool.dll
+C:\Users\rasoo\Documents\Work Space\Maktab\Maktab 71\Class Projects\Session 10\ElectronicSchool\ElectronicSchool\obj\Debug\net6.0\ref\ElectronicSchool.dll
+C:\Users\rasoo\Documents\Work Space\Maktab\Maktab 71\Class Projects\Session 10\ElectronicSchool\ElectronicSchool\obj\Debug\net6.0\ElectronicSchool.pdb
+C:\Users\rasoo\Documents\Work Space\Maktab\Maktab 71\Class Projects\Session 10\ElectronicSchool\ElectronicSchool\obj\Debug\net6.0\ElectronicSchool.genruntimeconfig.cache
+C:\Users\rasoo\Documents\Work Space\Maktab\Maktab 71\Class Projects\Session 10\ElectronicSchool\ElectronicSchool\obj\Debug\net6.0\ElectronicSchool.csproj.AssemblyReference.cache
+E:\C# Projects\ElectronicSchool\ElectronicSchool\bin\Debug\net6.0\ElectronicSchool.exe
+E:\C# Projects\ElectronicSchool\ElectronicSchool\bin\Debug\net6.0\ElectronicSchool.deps.json
+E:\C# Projects\ElectronicSchool\ElectronicSchool\bin\Debug\net6.0\ElectronicSchool.runtimeconfig.json
+E:\C# Projects\ElectronicSchool\ElectronicSchool\bin\Debug\net6.0\ElectronicSchool.dll
+E:\C# Projects\ElectronicSchool\ElectronicSchool\bin\Debug\net6.0\ElectronicSchool.pdb
+E:\C# Projects\ElectronicSchool\ElectronicSchool\obj\Debug\net6.0\ElectronicSchool.csproj.AssemblyReference.cache
+E:\C# Projects\ElectronicSchool\ElectronicSchool\obj\Debug\net6.0\ElectronicSchool.GeneratedMSBuildEditorConfig.editorconfig
+E:\C# Projects\ElectronicSchool\ElectronicSchool\obj\Debug\net6.0\ElectronicSchool.AssemblyInfoInputs.cache
+E:\C# Projects\ElectronicSchool\ElectronicSchool\obj\Debug\net6.0\ElectronicSchool.AssemblyInfo.cs
+E:\C# Projects\ElectronicSchool\ElectronicSchool\obj\Debug\net6.0\ElectronicSchool.csproj.CoreCompileInputs.cache
+E:\C# Projects\ElectronicSchool\ElectronicSchool\obj\Debug\net6.0\ElectronicSchool.dll
+E:\C# Projects\ElectronicSchool\ElectronicSchool\obj\Debug\net6.0\refint\ElectronicSchool.dll
+E:\C# Projects\ElectronicSchool\ElectronicSchool\obj\Debug\net6.0\ElectronicSchool.pdb
+E:\C# Projects\ElectronicSchool\ElectronicSchool\obj\Debug\net6.0\ElectronicSchool.genruntimeconfig.cache
+E:\C# Projects\ElectronicSchool\ElectronicSchool\obj\Debug\net6.0\ref\ElectronicSchool.dll
