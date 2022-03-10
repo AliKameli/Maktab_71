@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\C# Projects\\ElectronicSchool\\ElectronicSchool\\ElectronicSchool.csproj",
+      "projectUniqueName": "E:\\C# Projects\\GitHub\\Maktab_71\\Hafte 4\\Teacher Yekta Template\\ElectronicSchool\\ElectronicSchool\\ElectronicSchool.csproj",
       "projectName": "ElectronicSchool",
-      "projectPath": "E:\\C# Projects\\ElectronicSchool\\ElectronicSchool\\ElectronicSchool.csproj",
+      "projectPath": "E:\\C# Projects\\GitHub\\Maktab_71\\Hafte 4\\Teacher Yekta Template\\ElectronicSchool\\ElectronicSchool\\ElectronicSchool.csproj",
       "packagesPath": "C:\\Users\\KHASPOOL\\.nuget\\packages\\",
-      "outputPath": "E:\\C# Projects\\ElectronicSchool\\ElectronicSchool\\obj\\",
+      "outputPath": "E:\\C# Projects\\GitHub\\Maktab_71\\Hafte 4\\Teacher Yekta Template\\ElectronicSchool\\ElectronicSchool\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\KHASPOOL\\AppData\\Roaming\\NuGet\\NuGet.Config",

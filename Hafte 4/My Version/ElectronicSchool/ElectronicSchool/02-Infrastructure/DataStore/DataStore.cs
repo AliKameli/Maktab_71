@@ -7,9 +7,12 @@
     static DataStore()
     {
         Users = new List<User>();
-        var admin = new Admin("admin@gmail.com", "654321");
+        var admin = new Admin("ali", "123");
         admin.Activate();
         Users.Add(admin);
+        var teacher = new Teacher("amin", "123");
+        teacher.Activate();
+        Users.Add(teacher);
         CurrentUser =null;
         Courses = new List<Course>();
     }

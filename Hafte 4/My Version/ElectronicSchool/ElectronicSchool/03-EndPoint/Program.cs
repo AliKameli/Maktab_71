@@ -1,12 +1,7 @@
 ﻿
 IUserRepository _userRepository = new UserRepository();
 IStudentRepository _studentRepository = new StudentRepository();
-
-
-User s = new Student("asdasd", "4654646464");
-s.Mobile = "46546464";
-((Student)s).Courses=new List<StudentCourse>() { new StudentCourse { Score=10} };
-
+ICourseRepository _courseRepository = new CourseRepository();
 
 var currentuser = _userRepository.GetCurrentUser();
 if (currentuser == null)
@@ -42,7 +37,7 @@ void Login()
     Console.WriteLine("------- Login -------------");
     Console.Write("Please Enter Your Email : ");
     var email = Console.ReadLine();
-    if(email == null || email =="")
+    if (email == null || email == "")
     {
         Console.WriteLine("Incorrect Email . Please Try Again .");
         Console.WriteLine("Please Enter Any Key To Continue.");
@@ -54,7 +49,7 @@ void Login()
         Console.WriteLine();
         Console.Write("Please Enter Your Password : ");
         var password = Console.ReadLine();
-        if(password == null || password=="")
+        if (password == null || password == "")
         {
             Console.WriteLine("Incorrect Password . Please Try Again .");
             Console.WriteLine("Please Enter Any Key To Continue.");
@@ -75,9 +70,9 @@ void Login()
                 LoginOrRegisterMenu();
             }
         }
-        
+
     }
-    
+
 }
 void Register()
 {
@@ -85,7 +80,7 @@ void Register()
     Console.WriteLine("--------------- Register -----------");
     Console.Write("Please Enter Your Email : ");
     var email = Console.ReadLine();
-    if(email is null || email=="")
+    if (email is null || email == "")
     {
         Console.WriteLine("Incorrect Email Entered . Please Try Again.");
         Console.WriteLine("Please Enter Any Key To Continue .");
@@ -97,7 +92,7 @@ void Register()
         Console.WriteLine();
         Console.Write("Please Enter Your Password : ");
         var password = Console.ReadLine();
-        if (password is null || password =="")
+        if (password is null || password == "")
         {
             Console.WriteLine("Incorrect Password Entered . Please Try Again.");
             Console.WriteLine("Please Enter Any Key To Continue .");
@@ -158,7 +153,7 @@ void Register()
                     }
                     break;
             }
-            if(newUser is null)
+            if (newUser is null)
             {
                 Console.WriteLine("Registration Failed . Please Try Again .");
                 Console.WriteLine("Please Enter Any Key To Continue .");
@@ -178,7 +173,7 @@ void Register()
                 Console.ReadKey();
                 Login();
             }
-            
+
 
         }
 
@@ -194,7 +189,7 @@ void MainMenu()
         LoginOrRegisterMenu();
     else
     {
-        
+
         switch (currentUser.Role)
         {
             case RoleEnum.Admin:
@@ -210,7 +205,7 @@ void MainMenu()
                 break;
         }
     }
-    
+
 }
 void AdminMenu()
 {
@@ -224,9 +219,14 @@ void AdminMenu()
         Console.WriteLine($"Welcome {currentUser.Name}");
         var currentAdmin = (Admin)currentUser;
         Console.Clear();
-        Console.WriteLine("L - List Of Users");
+        Console.WriteLine("U - List Of Users");
+        Console.WriteLine("C - List Of Courses");
         Console.WriteLine("A - Activate User");
+        Console.WriteLine("S - Add Course");
+        Console.WriteLine("T - Change Course Teacher");
+        Console.WriteLine("D - Change Another Users Data");
         Console.WriteLine("O - LogOff");
+
         Console.Write("Please Select Action : ");
         var inputKey = Console.ReadKey();
         switch (inputKey.Key)
@@ -234,8 +234,14 @@ void AdminMenu()
             case ConsoleKey.L:
                 PrintListOfUser();
                 break;
+            case ConsoleKey.C:
+                PrintListOfCourses();
+                break;
             case ConsoleKey.A:
                 ActivateUser();
+                break;
+            case ConsoleKey.S:
+                AddCourseMenu();
                 break;
             case ConsoleKey.O:
                 LogOff();
@@ -244,8 +250,114 @@ void AdminMenu()
                 break;
         }
     }
-    
+
 }
+
+void AddCourseMenu()
+{
+    Console.Clear();
+    Console.WriteLine("--------------- Add Course --------------");
+    Console.Write("Please Enter Your Course Name : ");
+    var courseName = Console.ReadLine();
+    if (courseName is null || courseName == "")
+    {
+        Console.WriteLine("Incorrect Name Entered . Please Try Again.");
+        Console.WriteLine("Please Enter Any Key To Continue .");
+        Console.ReadKey();
+        AddCourseMenu();
+    }
+    else
+    {
+        Console.WriteLine("Enter Course Teacher Email");
+        var teacherEmail = Console.ReadLine();
+        if (string.IsNullOrEmpty(teacherEmail))
+        {
+            Console.WriteLine("Incorrect Email Entered . Please Try Again.");
+            Console.WriteLine("Please Enter Any Key To Continue .");
+            Console.ReadKey();
+            AddCourseMenu();
+        }
+        else
+        {
+            var courseTeacher = _userRepository.GetUser(teacherEmail);
+            if (courseTeacher == null || courseTeacher.Role != RoleEnum.Teacher)
+            {
+                Console.WriteLine("Teacher Does Not Exist");
+                Console.WriteLine("Please Enter Any Key To Continue .");
+                Console.ReadKey();
+                AddCourseMenu();
+            }
+            else
+            {
+
+                Console.WriteLine();
+                Console.WriteLine($"{(int)GradeEnum.MiddleSchool} - {GradeEnum.MiddleSchool}");
+                Console.WriteLine($"{(int)GradeEnum.HighSchool} - {GradeEnum.HighSchool}");
+                Console.WriteLine("Please Select Course Grade : ");
+                var gradeId = Convert.ToInt32(Console.ReadLine());
+                if (gradeId == (int)GradeEnum.MiddleSchool)
+                {
+                    var grade = (GradeEnum)gradeId;
+                    var course = new MiddleSchoolCourse(courseName, grade, (Teacher)courseTeacher);
+                    var result = _courseRepository.AddCourse(course);
+                    if (result == "OK")
+                    {
+                        Console.WriteLine("Course Added !");
+
+                        MainMenu();
+                    }
+                    else
+                    {
+                        Console.WriteLine(result);
+                        Console.WriteLine("Please Enter Any Key To Continue .");
+                        Console.ReadKey();
+                        LoginOrRegisterMenu();
+                    }
+                }
+                else if (gradeId == (int)GradeEnum.HighSchool)
+                {
+                    var grade = (GradeEnum)gradeId;
+                    Console.WriteLine("Enter Course Unit");
+                    var courseUnit = Convert.ToInt32(Console.ReadLine());
+                    if (courseUnit < 0)
+                    {
+                        Console.WriteLine("Course Unit Can Not Be Less Than 1");
+                        Console.WriteLine("Please Enter Any Key To Continue .");
+                        Console.ReadKey();
+                        AddCourseMenu();
+                    }
+                    else
+                    {
+                        var course = new HighSchoolCourse(courseName, grade, (Teacher)courseTeacher, courseUnit);
+                        var result = _courseRepository.AddCourse(course);
+                        if (result == "OK") { 
+                            Console.WriteLine("Course Added !");
+                        MainMenu(); }
+                        else
+                        {
+                            Console.WriteLine(result);
+                            Console.WriteLine("Please Enter Any Key To Continue .");
+                            Console.ReadKey();
+                            LoginOrRegisterMenu();
+                        }
+
+                    }
+
+                }
+                else
+                {
+                    Console.WriteLine("You Entered Incorrect Grade. Please Try Again .");
+                    Console.WriteLine("Please Enter Any Key To Continue .");
+                    Console.ReadKey();
+                    AddCourseMenu();
+                }
+            }
+
+        }
+
+    }
+}
+
 void LogOff()
 {
     _userRepository.LogOff();
@@ -258,7 +370,26 @@ void PrintListOfUser()
     Console.WriteLine("------------ List Of Users -------------");
     foreach (var user in users)
     {
-        Console.WriteLine(user);
+        if (user.Role == RoleEnum.Student)
+            Console.WriteLine((Student)user);
+        else
+            Console.WriteLine(user);
+    }
+    Console.WriteLine("Press Any key To Continue");
+    Console.ReadKey();
+    AdminMenu();
+}
+void PrintListOfCourses()
+{
+    var courses = _courseRepository.GetCourses();
+    Console.Clear();
+    Console.WriteLine("------------ List Of Courses -------------");
+    foreach (var course in courses)
+    {
+        if (course.Grade == GradeEnum.HighSchool)
+            Console.WriteLine((HighSchoolCourse)course);
+        else
+            Console.WriteLine(course);
     }
     Console.WriteLine("Press Any key To Continue");
     Console.ReadKey();
@@ -279,7 +410,7 @@ void ActivateUser()
     }
     else
     {
-        var user =_userRepository.GetUser(email);
+        var user = _userRepository.GetUser(email);
         if (user == null)
         {
             Console.WriteLine("This User Dose Not Exist.");
@@ -295,9 +426,9 @@ void ActivateUser()
             Console.ReadKey();
             AdminMenu();
         }
-            
 
-        
+
+
 
     }
 }

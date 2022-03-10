@@ -17,4 +17,8 @@
         base.Password=pass;
         return "OK";
     }
+    public override string ToString()
+    {
+        return $"{Name} - {Email} - {Mobile} - Role : {Role} - Grade : {Grade} - IsActive : {IsActive}";
+    }
 }

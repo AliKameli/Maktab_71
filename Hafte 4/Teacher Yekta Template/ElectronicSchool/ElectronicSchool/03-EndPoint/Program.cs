@@ -2,12 +2,6 @@
 IUserRepository _userRepository = new UserRepository();
 IStudentRepository _studentRepository = new StudentRepository();
 
-
-User s = new Student("asdasd", "4654646464");
-s.Mobile = "46546464";
-((Student)s).Courses=new List<StudentCourse>() { new StudentCourse { Score=10} };
-
-
 var currentuser = _userRepository.GetCurrentUser();
 if (currentuser == null)
     LoginOrRegisterMenu();

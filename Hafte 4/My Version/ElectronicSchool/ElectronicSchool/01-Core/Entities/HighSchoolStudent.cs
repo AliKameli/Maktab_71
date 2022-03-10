@@ -11,8 +11,8 @@
         foreach(var studentCourse in base.Courses)
         {
             var course = (HighSchoolCourse)studentCourse._Course;
-            sumOfScores += course.UnitOfCouse * studentCourse.Score;
-            sumOfUnits += course.UnitOfCouse;
+            sumOfScores += course.UnitOfCourse * studentCourse.Score;
+            sumOfUnits += course.UnitOfCourse;
         }
         return sumOfScores/sumOfUnits;
     }
