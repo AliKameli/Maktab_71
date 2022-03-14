@@ -1,0 +1,15 @@
+E:\C# Projects\GitHub\Maktab_71\Hafte 5\Tamrin\Tamrin\obj\Debug\net6.0\Tamrin.csproj.AssemblyReference.cache
+E:\C# Projects\GitHub\Maktab_71\Hafte 5\Tamrin\Tamrin\obj\Debug\net6.0\Tamrin.GeneratedMSBuildEditorConfig.editorconfig
+E:\C# Projects\GitHub\Maktab_71\Hafte 5\Tamrin\Tamrin\obj\Debug\net6.0\Tamrin.AssemblyInfoInputs.cache
+E:\C# Projects\GitHub\Maktab_71\Hafte 5\Tamrin\Tamrin\obj\Debug\net6.0\Tamrin.AssemblyInfo.cs
+E:\C# Projects\GitHub\Maktab_71\Hafte 5\Tamrin\Tamrin\obj\Debug\net6.0\Tamrin.csproj.CoreCompileInputs.cache
+E:\C# Projects\GitHub\Maktab_71\Hafte 5\Tamrin\Tamrin\bin\Debug\net6.0\Tamrin.exe
+E:\C# Projects\GitHub\Maktab_71\Hafte 5\Tamrin\Tamrin\bin\Debug\net6.0\Tamrin.deps.json
+E:\C# Projects\GitHub\Maktab_71\Hafte 5\Tamrin\Tamrin\bin\Debug\net6.0\Tamrin.runtimeconfig.json
+E:\C# Projects\GitHub\Maktab_71\Hafte 5\Tamrin\Tamrin\bin\Debug\net6.0\Tamrin.dll
+E:\C# Projects\GitHub\Maktab_71\Hafte 5\Tamrin\Tamrin\bin\Debug\net6.0\Tamrin.pdb
+E:\C# Projects\GitHub\Maktab_71\Hafte 5\Tamrin\Tamrin\obj\Debug\net6.0\Tamrin.dll
+E:\C# Projects\GitHub\Maktab_71\Hafte 5\Tamrin\Tamrin\obj\Debug\net6.0\refint\Tamrin.dll
+E:\C# Projects\GitHub\Maktab_71\Hafte 5\Tamrin\Tamrin\obj\Debug\net6.0\Tamrin.pdb
+E:\C# Projects\GitHub\Maktab_71\Hafte 5\Tamrin\Tamrin\obj\Debug\net6.0\Tamrin.genruntimeconfig.cache
+E:\C# Projects\GitHub\Maktab_71\Hafte 5\Tamrin\Tamrin\obj\Debug\net6.0\ref\Tamrin.dll

@@ -1,0 +1,15 @@
+E:\C# Projects\GitHub\Maktab_71\Hafte 4\HW4\ClassPractice\bin\Debug\net6.0\ClassPractice.exe
+E:\C# Projects\GitHub\Maktab_71\Hafte 4\HW4\ClassPractice\bin\Debug\net6.0\ClassPractice.deps.json
+E:\C# Projects\GitHub\Maktab_71\Hafte 4\HW4\ClassPractice\bin\Debug\net6.0\ClassPractice.runtimeconfig.json
+E:\C# Projects\GitHub\Maktab_71\Hafte 4\HW4\ClassPractice\bin\Debug\net6.0\ClassPractice.dll
+E:\C# Projects\GitHub\Maktab_71\Hafte 4\HW4\ClassPractice\bin\Debug\net6.0\ClassPractice.pdb
+E:\C# Projects\GitHub\Maktab_71\Hafte 4\HW4\ClassPractice\obj\Debug\net6.0\ClassPractice.csproj.AssemblyReference.cache
+E:\C# Projects\GitHub\Maktab_71\Hafte 4\HW4\ClassPractice\obj\Debug\net6.0\ClassPractice.GeneratedMSBuildEditorConfig.editorconfig
+E:\C# Projects\GitHub\Maktab_71\Hafte 4\HW4\ClassPractice\obj\Debug\net6.0\ClassPractice.AssemblyInfoInputs.cache
+E:\C# Projects\GitHub\Maktab_71\Hafte 4\HW4\ClassPractice\obj\Debug\net6.0\ClassPractice.AssemblyInfo.cs
+E:\C# Projects\GitHub\Maktab_71\Hafte 4\HW4\ClassPractice\obj\Debug\net6.0\ClassPractice.csproj.CoreCompileInputs.cache
+E:\C# Projects\GitHub\Maktab_71\Hafte 4\HW4\ClassPractice\obj\Debug\net6.0\ClassPractice.dll
+E:\C# Projects\GitHub\Maktab_71\Hafte 4\HW4\ClassPractice\obj\Debug\net6.0\refint\ClassPractice.dll
+E:\C# Projects\GitHub\Maktab_71\Hafte 4\HW4\ClassPractice\obj\Debug\net6.0\ClassPractice.pdb
+E:\C# Projects\GitHub\Maktab_71\Hafte 4\HW4\ClassPractice\obj\Debug\net6.0\ClassPractice.genruntimeconfig.cache
+E:\C# Projects\GitHub\Maktab_71\Hafte 4\HW4\ClassPractice\obj\Debug\net6.0\ref\ClassPractice.dll

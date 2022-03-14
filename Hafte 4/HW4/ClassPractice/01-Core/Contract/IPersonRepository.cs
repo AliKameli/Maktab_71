@@ -1,0 +1,4 @@
+﻿interface IPersonRepository:IRepository<Person>
+{
+
+}
