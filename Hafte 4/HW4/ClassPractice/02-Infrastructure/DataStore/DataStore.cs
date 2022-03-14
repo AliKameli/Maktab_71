@@ -8,7 +8,7 @@ public static class DataStore
     {
         if (!File.Exists(_dataStorFilePath))
             return;
-        File.Decrypt(_dataStorFilePath);
+        //File.Decrypt(_dataStorFilePath);
         string[] fileReadString = File.ReadAllLines(_dataStorFilePath);
         foreach (string oneLineData in fileReadString)
         {
@@ -31,7 +31,7 @@ public static class DataStore
         }
         fileWriteString = fileWriteString.OrderBy(x => Convert.ToInt64(x.Split(',').First())).ToList();
         File.WriteAllLines(_dataStorFilePath, fileWriteString.ToArray());
-        File.Encrypt(_dataStorFilePath);
+        //File.Encrypt(_dataStorFilePath);
     }
 
 }
