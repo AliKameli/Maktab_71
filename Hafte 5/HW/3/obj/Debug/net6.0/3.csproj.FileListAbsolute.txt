@@ -1,0 +1,5 @@
+D:\Maktab_71\Hafte 5\HW\3\obj\Debug\net6.0\3.csproj.AssemblyReference.cache
+D:\Maktab_71\Hafte 5\HW\3\obj\Debug\net6.0\3.GeneratedMSBuildEditorConfig.editorconfig
+D:\Maktab_71\Hafte 5\HW\3\obj\Debug\net6.0\3.AssemblyInfoInputs.cache
+D:\Maktab_71\Hafte 5\HW\3\obj\Debug\net6.0\3.AssemblyInfo.cs
+D:\Maktab_71\Hafte 5\HW\3\obj\Debug\net6.0\3.csproj.CoreCompileInputs.cache

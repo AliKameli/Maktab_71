@@ -1,0 +1,12 @@
+﻿var people = new List<Person>();
+var a = people.Where(x=> x.Age>20).OrderBy(x=> x.Name).ToList();
+var b = people.Where(x=> x.BirthDate<new DateTime(1999,1,1)).ToList();
+var c = people.GroupBy(x=>x.BirthDate).ToList();
+var d = people.OrderBy(x=>x.Id).ToList()[3];
+var e = people.OrderBy(x=>x.Id).ToList().Take(new Range(50,80)).ToList();
+var f = people.Where(x=> x.Age==people.Max(y=> y.Age)).ToList();
+var g = people.GroupBy(x=> x.SSID);
+var h = people.Where(x=> x.Address.Contains("Tehran")).ToList();
+var i = h.GroupBy(x=>x.Name).ToList().Where(x=>x.Lenght>=2).ToList(); 
+var j = people.Where(x=> x.SSID.ToString().Contains("123")).ToList();
+var k = people.Where(x=>x.Age>25).ToList().Select(x=> new {x.Address,x.SSID}).ToList();

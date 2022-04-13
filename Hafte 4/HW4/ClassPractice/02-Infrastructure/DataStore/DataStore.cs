@@ -2,12 +2,15 @@
 
 public static class DataStore
 {
-    private static readonly string _dataStorFilePath = @"E:\C# Projects\GitHub\Maktab_71\Hafte 4\HW4\ClassPractice\Data.json";
+    private static readonly string _dataStorFilePath = @"Data.json";
     public static List<Person> People { get; set; } = new List<Person>();
     static DataStore()
     {
         if (!File.Exists(_dataStorFilePath))
+        {
+            //File.Create(_dataStorFilePath);
             return;
+        }
         //File.Decrypt(_dataStorFilePath);
         string[] fileReadString = File.ReadAllLines(_dataStorFilePath);
         foreach (string oneLineData in fileReadString)
@@ -19,15 +22,15 @@ public static class DataStore
     }
     public static void SaveFile()
     {
-        List<string> fileWriteString =new List<string>();
+        List<string> fileWriteString = new List<string>();
         foreach (Person person in People)
         {
-            List<string> propString=new List<string>();
+            List<string> propString = new List<string>();
             foreach (PropertyInfo propertyInfo in person.GetType().GetProperties())
             {
                 propString.Add(propertyInfo.GetValue(person, null).ToString());
             }
-            fileWriteString.Add(String.Join('\u002C',propString.ToArray()));
+            fileWriteString.Add(String.Join('\u002C', propString.ToArray()));
         }
         fileWriteString = fileWriteString.OrderBy(x => Convert.ToInt64(x.Split(',').First())).ToList();
         File.WriteAllLines(_dataStorFilePath, fileWriteString.ToArray());
