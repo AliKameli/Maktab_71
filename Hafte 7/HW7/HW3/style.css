@@ -1,0 +1,43 @@
+table,
+th,
+td {
+    border-collapse: collapse;
+}
+
+.tableHead {
+    border-style: none;
+    color: aliceblue;
+    background-color: gray;
+}
+
+table {
+    width: 40%;
+
+    align-self: center;
+    align-items: center;
+    margin: 0 auto;
+    font-size: larger;
+}
+
+tr {
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+tr.rowdovom {
+    background-color: rgb(216, 215, 215);
+}
+
+@media only screen and (min-width:1200px) {
+    table {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:1199px) and (min-width:900px) {
+    table {
+        width: 80%;
+    }
+}

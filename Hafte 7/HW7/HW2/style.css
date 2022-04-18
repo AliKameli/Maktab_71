@@ -1,0 +1,29 @@
+table,
+th,
+td {
+    border-collapse: collapse;
+}
+.tableHead {
+    border-style: none;
+    color: aliceblue;
+    background-color: gray;
+}
+
+table {
+    width: 100%;
+    align-self: center;
+    align-items: center;
+    margin: 0 auto;
+    font-size: larger;
+}
+
+tr {
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+tr.rowdovom {
+    background-color: rgb(216, 215, 215);
+}

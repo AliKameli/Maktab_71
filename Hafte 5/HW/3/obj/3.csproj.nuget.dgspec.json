@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Maktab_71\\Hafte 5\\HW\\3\\3.csproj": {}
+    "E:\\C# Projects\\GitHub\\Maktab_71\\Hafte 5\\HW\\3\\3.csproj": {}
   },
   "projects": {
-    "D:\\Maktab_71\\Hafte 5\\HW\\3\\3.csproj": {
+    "E:\\C# Projects\\GitHub\\Maktab_71\\Hafte 5\\HW\\3\\3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Maktab_71\\Hafte 5\\HW\\3\\3.csproj",
+        "projectUniqueName": "E:\\C# Projects\\GitHub\\Maktab_71\\Hafte 5\\HW\\3\\3.csproj",
         "projectName": "3",
-        "projectPath": "D:\\Maktab_71\\Hafte 5\\HW\\3\\3.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "D:\\Maktab_71\\Hafte 5\\HW\\3\\obj\\",
+        "projectPath": "E:\\C# Projects\\GitHub\\Maktab_71\\Hafte 5\\HW\\3\\3.csproj",
+        "packagesPath": "C:\\Users\\KHASPOOL\\.nuget\\packages\\",
+        "outputPath": "E:\\C# Projects\\GitHub\\Maktab_71\\Hafte 5\\HW\\3\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\KHASPOOL\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

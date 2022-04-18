@@ -1,0 +1,30 @@
+.moraba {
+    width: 50px;
+    height: 50px;
+    background-color: #fafa8c;
+    border-radius: 5%;
+    margin-bottom: 10px;
+
+}
+
+.moraba:hover {
+    background-color: #8b12fc;
+}
+
+.moraba1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-left: 60px;
+    width: 100px;
+    height: 70px;
+    background-color: #fafa8c;
+    border-radius: 5%;
+
+
+}
+
+.moraba1:hover {
+    background-color: #8b12fc;
+}

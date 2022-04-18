@@ -13,7 +13,7 @@ var a = people.Where(x=> x.Age>20).OrderBy(x=> x.Name).ToList();
 var b = people.Where(x=> x.BirthDate<new DateTime(1999,1,1)).ToList();
 var c = people.GroupBy(x=>x.BirthDate).ToList();
 var d = people.OrderBy(x => x.Id).ToList()[3];
-var e = people.OrderBy(x=>x.Id).ToList().Take(new Range(50,80)).ToList();
+var e = people.OrderBy(x=>x.Id).ToList().Skip(50).Take(30).ToList();
 var f = people.Where(x=> x.Age==people.Max(y=> y.Age)).ToList();
 var g = people.GroupBy(x=> x.Id).ToList();
 var h = people.Where(x=> x.Address.Contains("Tehran")).ToList();
