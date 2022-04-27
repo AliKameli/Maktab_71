@@ -1,0 +1,61 @@
+﻿@model List<Employee> 
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h3>Employee List</h3>
+    <a class="btn btn-success"
+                   asp-controller="Employee"
+                   asp-action="Add"
+                   >
+                    جدید
+                </a>
+
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Family</th>
+        <th scope="col">Age</th>
+        <th scope="col"></th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var emp in Model)
+    {
+        <tr>
+            <th scope="row">
+                #
+            </th>
+            <td>@emp.Name</td>
+            <td>@emp.Family</td>
+            <td>@emp.Age</td>
+            <td>
+                <a class="btn btn-info"
+                   asp-controller="Employee"
+                   asp-action="Detail"
+                   asp-route-id="@emp.Id">
+                    مشاهده
+                </a>
+                |
+                <a class="btn btn-danger"
+                   asp-controller="Employee"
+                   asp-action="Remove"
+                   asp-route-id="@emp.Id">
+                    حذف
+                </a>
+                <a class="btn btn-danger"
+                   asp-controller="Employee"
+                   asp-action="MultiParameter"
+                   asp-route-id="@emp.Id"
+                   asp-route-lastname="@emp.Family"
+                   asp-route-name="@emp.Name"
+                   >
+                    تست
+                </a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>

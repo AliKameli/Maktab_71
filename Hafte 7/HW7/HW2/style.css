@@ -1,6 +1,7 @@
 table,
 th,
 td {
+    border-style: double;
     border-collapse: collapse;
 }
 .tableHead {
@@ -10,6 +11,7 @@ td {
 }
 
 table {
+    
     width: 100%;
     align-self: center;
     align-items: center;

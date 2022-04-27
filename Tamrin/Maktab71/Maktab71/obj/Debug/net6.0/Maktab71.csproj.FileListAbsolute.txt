@@ -1,0 +1,52 @@
+E:\projects\1401\Sample\Maktab71\Maktab71\bin\Debug\net6.0\appsettings.Development.json
+E:\projects\1401\Sample\Maktab71\Maktab71\bin\Debug\net6.0\appsettings.json
+E:\projects\1401\Sample\Maktab71\Maktab71\bin\Debug\net6.0\Maktab71.staticwebassets.runtime.json
+E:\projects\1401\Sample\Maktab71\Maktab71\bin\Debug\net6.0\Maktab71.exe
+E:\projects\1401\Sample\Maktab71\Maktab71\bin\Debug\net6.0\Maktab71.deps.json
+E:\projects\1401\Sample\Maktab71\Maktab71\bin\Debug\net6.0\Maktab71.runtimeconfig.json
+E:\projects\1401\Sample\Maktab71\Maktab71\bin\Debug\net6.0\Maktab71.dll
+E:\projects\1401\Sample\Maktab71\Maktab71\bin\Debug\net6.0\ref\Maktab71.dll
+E:\projects\1401\Sample\Maktab71\Maktab71\bin\Debug\net6.0\Maktab71.pdb
+E:\projects\1401\Sample\Maktab71\Maktab71\obj\Debug\net6.0\Maktab71.csproj.AssemblyReference.cache
+E:\projects\1401\Sample\Maktab71\Maktab71\obj\Debug\net6.0\Maktab71.GeneratedMSBuildEditorConfig.editorconfig
+E:\projects\1401\Sample\Maktab71\Maktab71\obj\Debug\net6.0\Maktab71.AssemblyInfoInputs.cache
+E:\projects\1401\Sample\Maktab71\Maktab71\obj\Debug\net6.0\Maktab71.AssemblyInfo.cs
+E:\projects\1401\Sample\Maktab71\Maktab71\obj\Debug\net6.0\Maktab71.csproj.CoreCompileInputs.cache
+E:\projects\1401\Sample\Maktab71\Maktab71\obj\Debug\net6.0\Maktab71.MvcApplicationPartsAssemblyInfo.cache
+E:\projects\1401\Sample\Maktab71\Maktab71\obj\Debug\net6.0\Maktab71.RazorAssemblyInfo.cache
+E:\projects\1401\Sample\Maktab71\Maktab71\obj\Debug\net6.0\Maktab71.RazorAssemblyInfo.cs
+E:\projects\1401\Sample\Maktab71\Maktab71\obj\Debug\net6.0\staticwebassets.build.json
+E:\projects\1401\Sample\Maktab71\Maktab71\obj\Debug\net6.0\staticwebassets.development.json
+E:\projects\1401\Sample\Maktab71\Maktab71\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+E:\projects\1401\Sample\Maktab71\Maktab71\obj\Debug\net6.0\scopedcss\bundle\Maktab71.styles.css
+E:\projects\1401\Sample\Maktab71\Maktab71\obj\Debug\net6.0\scopedcss\projectbundle\Maktab71.bundle.scp.css
+E:\projects\1401\Sample\Maktab71\Maktab71\obj\Debug\net6.0\Maktab71.dll
+E:\projects\1401\Sample\Maktab71\Maktab71\obj\Debug\net6.0\ref\Maktab71.dll
+E:\projects\1401\Sample\Maktab71\Maktab71\obj\Debug\net6.0\Maktab71.pdb
+E:\projects\1401\Sample\Maktab71\Maktab71\obj\Debug\net6.0\Maktab71.genruntimeconfig.cache
+E:\C# Projects\GitHub\Maktab_71\Tamrin\Maktab71\Maktab71\bin\Debug\net6.0\appsettings.Development.json
+E:\C# Projects\GitHub\Maktab_71\Tamrin\Maktab71\Maktab71\bin\Debug\net6.0\appsettings.json
+E:\C# Projects\GitHub\Maktab_71\Tamrin\Maktab71\Maktab71\bin\Debug\net6.0\Maktab71.staticwebassets.runtime.json
+E:\C# Projects\GitHub\Maktab_71\Tamrin\Maktab71\Maktab71\bin\Debug\net6.0\Maktab71.exe
+E:\C# Projects\GitHub\Maktab_71\Tamrin\Maktab71\Maktab71\bin\Debug\net6.0\Maktab71.deps.json
+E:\C# Projects\GitHub\Maktab_71\Tamrin\Maktab71\Maktab71\bin\Debug\net6.0\Maktab71.runtimeconfig.json
+E:\C# Projects\GitHub\Maktab_71\Tamrin\Maktab71\Maktab71\bin\Debug\net6.0\Maktab71.dll
+E:\C# Projects\GitHub\Maktab_71\Tamrin\Maktab71\Maktab71\bin\Debug\net6.0\Maktab71.pdb
+E:\C# Projects\GitHub\Maktab_71\Tamrin\Maktab71\Maktab71\obj\Debug\net6.0\Maktab71.csproj.AssemblyReference.cache
+E:\C# Projects\GitHub\Maktab_71\Tamrin\Maktab71\Maktab71\obj\Debug\net6.0\Maktab71.GeneratedMSBuildEditorConfig.editorconfig
+E:\C# Projects\GitHub\Maktab_71\Tamrin\Maktab71\Maktab71\obj\Debug\net6.0\Maktab71.AssemblyInfoInputs.cache
+E:\C# Projects\GitHub\Maktab_71\Tamrin\Maktab71\Maktab71\obj\Debug\net6.0\Maktab71.AssemblyInfo.cs
+E:\C# Projects\GitHub\Maktab_71\Tamrin\Maktab71\Maktab71\obj\Debug\net6.0\Maktab71.csproj.CoreCompileInputs.cache
+E:\C# Projects\GitHub\Maktab_71\Tamrin\Maktab71\Maktab71\obj\Debug\net6.0\Maktab71.MvcApplicationPartsAssemblyInfo.cache
+E:\C# Projects\GitHub\Maktab_71\Tamrin\Maktab71\Maktab71\obj\Debug\net6.0\Maktab71.RazorAssemblyInfo.cache
+E:\C# Projects\GitHub\Maktab_71\Tamrin\Maktab71\Maktab71\obj\Debug\net6.0\Maktab71.RazorAssemblyInfo.cs
+E:\C# Projects\GitHub\Maktab_71\Tamrin\Maktab71\Maktab71\obj\Debug\net6.0\staticwebassets.build.json
+E:\C# Projects\GitHub\Maktab_71\Tamrin\Maktab71\Maktab71\obj\Debug\net6.0\staticwebassets.development.json
+E:\C# Projects\GitHub\Maktab_71\Tamrin\Maktab71\Maktab71\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+E:\C# Projects\GitHub\Maktab_71\Tamrin\Maktab71\Maktab71\obj\Debug\net6.0\scopedcss\bundle\Maktab71.styles.css
+E:\C# Projects\GitHub\Maktab_71\Tamrin\Maktab71\Maktab71\obj\Debug\net6.0\scopedcss\projectbundle\Maktab71.bundle.scp.css
+E:\C# Projects\GitHub\Maktab_71\Tamrin\Maktab71\Maktab71\obj\Debug\net6.0\Maktab71.dll
+E:\C# Projects\GitHub\Maktab_71\Tamrin\Maktab71\Maktab71\obj\Debug\net6.0\refint\Maktab71.dll
+E:\C# Projects\GitHub\Maktab_71\Tamrin\Maktab71\Maktab71\obj\Debug\net6.0\Maktab71.pdb
+E:\C# Projects\GitHub\Maktab_71\Tamrin\Maktab71\Maktab71\obj\Debug\net6.0\Maktab71.genruntimeconfig.cache
+E:\C# Projects\GitHub\Maktab_71\Tamrin\Maktab71\Maktab71\obj\Debug\net6.0\ref\Maktab71.dll
