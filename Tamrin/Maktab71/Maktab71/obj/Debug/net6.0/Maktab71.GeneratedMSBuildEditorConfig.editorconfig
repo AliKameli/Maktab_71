@@ -15,6 +15,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = E:\C# Projects\GitHub\Maktab_71\Tamrin\Maktab71\Maktab71
 build_property._RazorSourceGeneratorDebug = 
 
+[E:/C\# Projects/GitHub/Maktab_71/Tamrin/Maktab71/Maktab71/Views/Employee/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcQWRkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/C\# Projects/GitHub/Maktab_71/Tamrin/Maktab71/Maktab71/Views/Employee/Detail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcRGV0YWlsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

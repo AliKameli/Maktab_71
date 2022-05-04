@@ -40,7 +40,8 @@ public class EmployeeController : Controller
     [HttpPost]
     public IActionResult Add(EmployeeSaveDTO model)
     {
-        return View();
+        var result = EmployeeDb.Add(model);
+        return RedirectToAction("List");
     }
 
     [HttpGet]

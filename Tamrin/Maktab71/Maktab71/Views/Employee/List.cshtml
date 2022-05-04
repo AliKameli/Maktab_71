@@ -1,61 +1,70 @@
-﻿@model List<Employee> 
+﻿@model List<Employee>
 @{
-    ViewData["Title"] = "Home Page";
+	ViewData["Title"] = "Home Page";
 }
 
-<h3>Employee List</h3>
-    <a class="btn btn-success"
-                   asp-controller="Employee"
-                   asp-action="Add"
-                   >
-                    جدید
-                </a>
-
+<h3 style="float:right;">لیست کارکنان</h3>
+<div style="float:left;">
+	<a class="btn btn-success" asp-controller="Employee" asp-action="Add">
+		جدید
+	</a>
+</div>
 <table class="table table-striped">
-    <thead>
-    <tr>
-        <th scope="col">#</th>
-        <th scope="col">Name</th>
-        <th scope="col">Family</th>
-        <th scope="col">Age</th>
-        <th scope="col"></th>
-    </tr>
-    </thead>
-    <tbody>
-    @foreach (var emp in Model)
-    {
-        <tr>
-            <th scope="row">
-                #
-            </th>
-            <td>@emp.Name</td>
-            <td>@emp.Family</td>
-            <td>@emp.Age</td>
-            <td>
-                <a class="btn btn-info"
-                   asp-controller="Employee"
-                   asp-action="Detail"
-                   asp-route-id="@emp.Id">
-                    مشاهده
-                </a>
-                |
-                <a class="btn btn-danger"
-                   asp-controller="Employee"
-                   asp-action="Remove"
-                   asp-route-id="@emp.Id">
-                    حذف
-                </a>
-                <a class="btn btn-danger"
-                   asp-controller="Employee"
-                   asp-action="MultiParameter"
-                   asp-route-id="@emp.Id"
-                   asp-route-lastname="@emp.Family"
-                   asp-route-name="@emp.Name"
-                   >
-                    تست
-                </a>
-            </td>
-        </tr>
-    }
-    </tbody>
+	<thead>
+		<tr>
+			<th scope="col">#</th>
+			<th scope="col">Name</th>
+			<th scope="col">Family</th>
+			<th scope="col">Age</th>
+			<th scope="col"></th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var emp in Model)
+		{
+			<tr>
+				<th scope="row">
+					#
+				</th>
+				<td>@emp.Name</td>
+				<td>@emp.Family</td>
+				<td>@emp.Age</td>
+				<td>
+					<a class="btn btn-info" asp-controller="Employee" asp-action="Detail" asp-route-id="@emp.Id">
+						مشاهده
+					</a>
+					|
+					<a class="btn btn-primary" asp-controller="Employee" asp-action="Update">
+						ویرایش
+					</a>
+					<!-- Button trigger modal -->
+				<button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">
+						حذف
+					</button>
+
+					<!-- Modal -->
+				<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="exampleModalLabel">توجه !</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body">
+									آیا از حذف کاروند شماره @emp.Id اطمینان دارید ؟
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary" data-dismiss="modal">انصراف</button>
+									<button type="button" class="btn btn-danger" asp-controller="Employee" asp-action="Remove" asp-route-id="@emp.Id">حذف</button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</td>
+			</tr>
+		}
+	</tbody>
 </table>
