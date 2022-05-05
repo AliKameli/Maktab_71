@@ -1,0 +1,52 @@
+﻿@model MemberDTO
+<h3>اضافه کردن عضو جدید</h3>
+<form>
+
+	<div class="form-group">
+		<label asp-for="FirstName"></label>
+		<input class="form-control" asp-for="FirstName">
+	</div>
+
+	<div class="form-group">
+		<label asp-for="LastName"></label>
+		<input class="form-control" asp-for="LastName">
+	</div>   
+	
+	<div class="form-group">
+		<label asp-for="SSID"></label>
+		<input class="form-control" asp-for="SSID">
+	</div> 
+	
+	<div class="form-group">
+		<label asp-for="Mobile"></label>
+		<input class="form-control" asp-for="Mobile">
+	</div>  
+	
+	<div class="form-group">
+		<label asp-for="Sex"></label>
+		<select class="form-select" asp-for="Sex">
+			<option value="1">مرد</option>
+			<option value="2">زن</option>
+		</select>
+	</div>
+
+	<div class="form-group">
+		<label asp-for="BirthDate"></label>
+		<input class="form-control" asp-for="BirthDate">
+	</div>
+
+	<div class="form-group">
+		<label asp-for="SubscriptionType"></label>
+		<select class="form-select" asp-for="SubscriptionType">		
+			<option value="0">برنزی</option>
+			<option value="1">نقره‌ای</option>
+			<option value="2">طلایی</option>
+			</select>
+	</div>
+
+	<div style="float:left; margin-top:5px;">
+	<button type="submit" class="btn btn-primary" asp-action="Add" formmethod="post">ایجاد</button>
+	<button type="submit" class="btn btn-danger" asp-action="Index">انصراف</button>
+	</div>
+
+</form>
