@@ -1,0 +1,68 @@
+﻿@using CompleteProject.Entities
+@model List<Member>
+@{
+	ViewData["Title"] = "لیست اعضا";
+}
+
+<h3 style="float:right;">لیست اعضا</h3>
+<div style="float:left;">
+	<a class="btn btn-success" asp-controller="Member" asp-action="Add">
+		جدید
+	</a>
+</div>
+
+<br>
+
+<div style="margin-top:1%; margin-bottom:1%;">
+	<form asp-action="Search" formmethod="post">
+		<div class="row">
+
+			<div class="col-auto">
+				<input class="form-control" name="name" placeholder="نام مورد نظر را وارد کنید">
+			</div>
+
+			<div class="col-auto">
+				<button type="submit" class="btn btn-primary">جستجو</button>
+			</div>
+		</div>
+
+	</form>
+</div>
+
+<table class="table table-striped">
+	<thead>
+		<tr>
+			<th scope="col">شناسه</th>
+			<th scope="col">نام</th>
+			<th scope="col">نام خانوادگی</th>
+			<th scope="col">شماره ملی</th>
+			<th scope="col"></th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var emp in Model)
+		{
+			<tr>
+				<th scope="row">
+					@emp.Id
+				</th>
+				<td>@emp.FirstName</td>
+				<td>@emp.LastName</td>
+				<td>@emp.SSID</td>
+				<td>
+					<a class="btn btn-info" asp-controller="Member" asp-action="Detail" asp-route-id="@emp.Id">
+						مشاهده
+					</a>
+					|
+					<a class="btn btn-primary" asp-controller="Member" asp-action="Update" asp-route-id=@emp.Id>
+						ویرایش
+					</a>
+					|
+					<a class="btn btn-danger" asp-controller="Member" asp-action="Remove" asp-route-id="@emp.Id">
+						حذف
+					</a>
+				</td>
+			</tr>
+		}
+	</tbody>
+</table>

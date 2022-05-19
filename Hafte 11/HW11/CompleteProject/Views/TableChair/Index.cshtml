@@ -1,0 +1,59 @@
+﻿@using CompleteProject.Entities
+@model List<Bill>
+@{
+	ViewData["Title"] = "Home Page";
+}
+
+<h3 style="float:right;">لیست فاکتور‌ها</h3>
+
+<br>
+
+
+
+<table class="table table-striped">
+	<thead>
+		<tr>
+			<th scope="col">شناسه فاکتو</th>
+			<th scope="col">فروشنده</th>
+			<th scope="col">فروشگاه</th>
+			<th scope="col">خریدار</th>
+			<th scope="col">کارخانه‌ها</th>
+			<th scope="col">قیمت</th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var bill in Model)
+		{
+			<tr>
+				<th scope="row">
+					@bill.Id
+				</th>
+				<td>
+					<a asp-controller="TableChair" asp-action="SellerDetail" asp-route-id="@bill.Seller.Id">
+						@bill.Seller.FirstName @bill.Seller.LastName
+					</a>
+				</td>
+				<td>
+					<a asp-controller="TableChair" asp-action="ShopDetail" asp-route-id="@bill.Shop.Id">
+						@bill.Shop.Name
+					</a>
+				</td>
+				<td>
+					<a asp-controller="TableChair" asp-action="BuyerDetail" asp-route-id="@bill.Buyer.Id">
+						@bill.Buyer.FirstName @bill.Buyer.LastName
+					</a>
+				</td>
+				<td>
+					@foreach (Manufacturer man in bill.Manufacturers)
+					{
+						<a asp-controller="TableChair" asp-action="ManDetail" asp-route-id="@man.Id">
+							@man.Name
+						</a>
+						<a>&nbsp;&nbsp;</a>
+					}
+				</td>
+				<td>@bill.Price</td>
+			</tr>
+		}
+	</tbody>
+</table>

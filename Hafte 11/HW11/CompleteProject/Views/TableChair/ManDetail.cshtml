@@ -1,0 +1,32 @@
+﻿@model Manufacturer
+@using System.Reflection;
+@using System.ComponentModel.DataAnnotations;
+@using System.Linq;
+@using System.ComponentModel;
+@using CompleteProject.Entities
+
+@{
+
+}
+<div class="card" style="width: 18rem;">
+	<div class="card-body">
+		@foreach (var property in Model.GetType().GetProperties().SkipLast(1))
+		{
+			var temp = property.GetCustomAttributes(typeof(DisplayNameAttribute)).Cast<DisplayNameAttribute>().FirstOrDefault();
+			string name = property.Name;
+			if (temp != null)
+				name = temp.DisplayName;
+			<h5 class="card-title">@name :</h5>
+			<p class="card-text">@property.GetValue(Model)</p>
+		}
+		<h5 class="card-title">Bills :</h5>
+		<p class="card-text">
+			@foreach (var bill in Model.Bills)
+			{
+				<a>@bill.Id &nbsp;&nbsp;</a>
+			}
+		</p>
+	</div>
+	<a class="btn btn-info"
+	   asp-action="Index">نمایش لیست</a>
+</div>

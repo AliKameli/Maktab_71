@@ -1,0 +1,138 @@
+﻿@using CompleteProject.Entities
+
+@model List<Library>
+@{
+	ViewData["Title"] = "Home Page";
+	int count = 1;
+
+}
+
+<h3 style="float:right;">اطلاعات کتابخانه‌ها</h3>
+
+
+<br>
+
+
+<table class="table table-striped" >
+	<thead>
+		<tr>
+			<th scope="col">#</th>
+			<th scope="col">
+				<div>شناسه کتابخانه</div>
+				<div style="margin-top:4%; margin-bottom:1%;">
+					<form asp-action="SearchById" formmethod="post">
+						<div class="row">
+							<div class="col">
+								<input class="form-control" name="id" placeholder="جستجو">
+							</div>
+
+							<div class="col">
+								<button type="submit" class="btn btn-primary">جستجو</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</th>
+			<th scope="col">
+				<div>نام کتابخانه</div>
+				<div class="form-group" style="margin-top:4%; margin-bottom:1%;">
+					<form asp-action="SearchByName" formmethod="post">
+						<div class="row">
+							<div class="col">
+								<input class="form-control" name="name" placeholder="جستجو">
+							</div>
+
+							<div class="col">
+								<button type="submit" class="btn btn-primary">جستجو</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</th>
+			<th scope="col">
+				<div>شهر و آدرس</div>
+				<div class="form-group" style="margin-top:4%; margin-bottom:1%;">
+					<form asp-action="SearchByAddress" formmethod="post">
+						<div class="row">
+							<div class="col">
+								<input class="form-control" name="name" placeholder="جستجو">
+							</div>
+
+							<div class="col">
+								<button type="submit" class="btn btn-primary">جستجو</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</th>
+			<th scope="col">
+				<div>اعضای کتابخانه</div>
+				<div class="form-group" style="margin-top:4%; margin-bottom:1%;">
+					<form asp-action="SearchByMember" formmethod="post">
+						<div class="row">
+							<div class="col">
+								<input class="form-control" name="name" placeholder="جستجو">
+							</div>
+
+							<div class="col">
+								<button type="submit" class="btn btn-primary">جستجو</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</th>
+			<th scope="col">
+				<div>کتاب‌های امانت گرفته شده</div>
+				<div class="form-group" style="margin-top:4%; margin-bottom:1%;">
+					<form asp-action="SearchByBorrowedBooks" formmethod="post">
+						<div class="row">
+							<div class="col">
+								<input class="form-control" name="name" placeholder="جستجو">
+							</div>
+
+							<div class="col">
+								<button type="submit" class="btn btn-primary">جستجو</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (Library lib in Model)
+		{
+			int count1 = 1;
+			int count2 = 1;
+			<tr>
+
+				<th scope="row">
+					@count
+				</th>
+				<td>@lib.Id</td>
+				<td>@lib.Name</td>
+				<td>
+					شهر : @lib.City.Name
+					<br>
+					آدرس :  @lib.Address
+				</td>
+				<td>
+					@foreach (var mem in lib.Members)
+					{
+						<div>عضو @count1 : &nbsp;&nbsp; @mem.FirstName @mem.LastName</div>
+						count1++;
+					}
+
+				</td>
+				<td>
+					@foreach (var book in lib.Books.Where(x => x.IsBorrowed))
+					{
+						<div>کتاب @count2 : &nbsp;&nbsp; @book.Title</div>
+						count2++;
+					}
+				</td>
+			</tr>
+			count++;
+		}
+	</tbody>
+</table>

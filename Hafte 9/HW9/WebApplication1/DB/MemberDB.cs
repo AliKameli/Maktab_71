@@ -4,33 +4,6 @@ public static class MemberDB
 {
     public static List<Member> Members { get; set; } = new List<Member>()
     {
-        new Member()
-        {
-
-            FirstName = "Sadra",
-            LastName = "Daviran",
-            ID = 1,
-            Mobile = "09125478475",
-            SSID = "0087541474"
-        },
-        new Member()
-        {
-
-            FirstName = "Mahdi",
-            LastName = "Mollaeian",
-            ID = 2,
-            Mobile = "09125478475",
-            SSID = "0087541474"
-        },
-        new Member()
-        {
-
-            FirstName = "Ali",
-            LastName = "Kameli",
-            ID = 3,
-            Mobile = "09125478475",
-            SSID = "0087541474"
-        },
     };
     private static UInt16 idCount = 3;
 

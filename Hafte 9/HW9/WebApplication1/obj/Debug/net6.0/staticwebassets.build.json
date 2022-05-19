@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "uL3NoBjZqW4XlkD0pR1IlN25rjGB8yr3/4fVv+s6NGU=",
+  "Hash": "l9pUbEm2OzTZX/PjKrO4RazkJKJgri7LR2TWBf6mwnQ=",
   "Source": "WebApplication1",
   "BasePath": "_content/WebApplication1",
   "Mode": "Default",
@@ -83,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "E:\\C# Projects\\GitHub\\Maktab_71\\Hafte 9\\HW9\\WebApplication1\\wwwroot\\Hello.html",
+      "SourceId": "WebApplication1",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\C# Projects\\GitHub\\Maktab_71\\Hafte 9\\HW9\\WebApplication1\\wwwroot\\",
+      "BasePath": "_content/WebApplication1",
+      "RelativePath": "Hello.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Hello.html"
     },
     {
       "Identity": "E:\\C# Projects\\GitHub\\Maktab_71\\Hafte 9\\HW9\\WebApplication1\\wwwroot\\js\\site.js",

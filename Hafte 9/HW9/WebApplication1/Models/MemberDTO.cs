@@ -14,13 +14,13 @@ public class MemberDTO
     public SexEnum Sex { get; set; }
     
     [DisplayName("کد ملی")]
-    public string SSID { get; set; }
+    public string? SSID { get; set; }
     
     [DisplayName("شماره تلفن همراه")]
-    public string Mobile { get; set; }
+    public string? Mobile { get; set; }
     
     [DisplayName("تاریخ تولد")]
-    public DateTime BirthDate { get; set; }
+    public DateTime? BirthDate { get; set; }
     
     [DisplayName("نوع عضویت")]
     public SubscriptionTypeEnum SubscriptionType { get; set; }
@@ -30,8 +30,13 @@ public class MemberDTO
     {
         return new MemberDTO()
         {
-            FirstName = v.FirstName, LastName = v.LastName, Sex = v.Sex, Mobile = v.Mobile, BirthDate = v.BirthDate,
-            SSID = v.SSID, SubscriptionType = v.SubscriptionType
+            FirstName = v.FirstName, 
+            LastName = v.LastName, 
+            Sex = v.Sex, 
+            Mobile = v.Mobile, 
+            BirthDate = v.BirthDate,
+            SSID = v.SSID, 
+            SubscriptionType = v.SubscriptionType
         };
     }
 }
